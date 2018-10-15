@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>Politeia</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet"  href="style.css">
+
+	
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+<body>
+	<header class="header clearfix">
+		<a href="" class="header_logo">Associazione Politeia</a>
+		<img  class="header_gif" src="file:///home/sveva/Scaricati/imageedit_1_9649815909.png">
+		<a href="" class="header_icon-bar">
+			<span></span>
+			<span></span>	
+			<span></span>
+		</a>
+		<ul class="header_menu">
+			<li class="header_menu_item"><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+			<li class="header_menu_item"><a href="single.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+ProssimiEventi</a></li>
+			<li class="header_menu_item"><a href="single2.html"><i class="fa fa-calendar-check-o"></i> EventiPassati </a></li>
+			<li class="header_menu_item"><a href="">Item</a></li>
+			<li class="header_menu_item"><a href="single3.html"><i class="fa fa-address-book-o"></i> stayContatti </a></li>
+		</ul>
+	</header>
+
+	<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+		<div class="w3-display-middle">
+				    <h1 class="w3-jumbo w3-animate-top">DIBATTITO REFERENDUM ATAC</h1>
+				    <h2 class="dove"></h2>
+				    <h3 class="quando"></h3>
+				    <hr class="w3-border-grey" style="margin:auto;width:40%">
+				    <p id="demo" class="w3-large w3-center">15 days 20 hours 14 minutes 21 seconds</p>
+				    <h4 align="center">Contattaci per avere altre informazioni</h4>
+				    <p class="info" align="center">
+				    	<a  class="info_email"href="mailto:politeiainformazioni@gmail.com?Subject=Informazioni%20Evento">politeiainformazioni@gmail.com</a></p>
+			    </div>
+			</div>
+
+	<footer class="footer">
+		<p>Copyright - 2018 - politeiainformazioni.it</p>
+	</footer>
+	<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("Oct 25, 2018 18:30:00").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	    // Get todays date and time
+	    var now = new Date().getTime();
+	    
+	    // Find the distance between now and the count down date
+	    var distance = countDownDate - now;
+	    
+	    // Time calculations for days, hours, minutes and seconds
+	    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	    
+	    // Output the result in an element with id="demo"
+	    document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
+	    + minutes + " minutes " + seconds + " seconds ";
+	    
+	    // If the count down is over, write some text 
+	    if (distance < 0) {
+	        clearInterval(x);
+	        document.getElementById("demo").innerHTML = "EXPIRED";
+	    }
+	}, 1000);
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".header_icon-bar").click(function(e)){
+				$(".header_menu").toggleClass("is-open");
+				e.preventDefault();
+			}
+		}
+	</script>
+</body>
+</html>

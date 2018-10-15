@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Politeia</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet"  href="style.css">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+	<header class="header clearfix">
+		<a href="" class="header_logo">Associazione Politeia</a>
+		<img  class="header_gif" src="file:///home/sveva/Scaricati/imageedit_1_9649815909.png">
+		<a href="" class="header_icon-bar">
+			<span></span>
+			<span></span>	
+			<span></span>
+		</a>
+		<ul class="header_menu">
+			<li class="header_menu_item"><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+			<li class="header_menu_item"><a href="single.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+ProssimiEventi</a></li>
+			<li class="header_menu_item"><a href="single2.html"><i class="fa fa-calendar-check-o"></i> EventiPassati</a></li>
+			<li class="header_menu_item"><a href="">Item</a></li>
+			<li class="header_menu_item"><a href="single3.html"><i class="fa fa-address-book-o"></i> Contatti</a></li>
+		</ul>
+	</header>
+
+	<section class="cover">
+		<div class="cover_filter">
+			
+		</div>
+		<div class="cover_caption">
+			<div class="cover_caption_copy">
+				<h1>Politeia</h1>
+				<h2>Mettersi insieme è un inizio, rimanere insieme è un progresso, lavorare insieme è un successo.</h2>
+				<h3>Henry Ford</h3>
+				<a href="single.html" class="button">Prossimi Eventi</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="cover2">
+		<div class="cover2_filter">
+			<div class="cover2_caption">
+				<div class="cover2_caption_copy" >
+					<h4 class="font">ABOUT US</h4>
+					<p class="font_1">
+						Politeia, poiché indica nella sua etimologia il regime politico,il corpo civico e il diritto di cittadinanza; il logo è composto dalla facciata di un tempio greco con 4 colonne in secondo piano, che identificano <p class="font_2">sensibilizzazione, ambiente, partecipazione e confronto.</p>
+					</p>
+					<p class="font_3">
+						Siamo un'associazione che si propone di sensibilizzare e dibattere su temi di attualità col fine di incentivare lo sviluppo di senso civico e politico.
+					</p>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	
+	
+	<section class="cards clearfix">
+			<div class="card">
+				<a class="instagram" href="https://www.instagram.com/politeia_official/">
+				<img class="card_image"src="file:///home/sveva/Scaricati/instagram.png">
+				<h3>Instagram   <i class="fa fa-instagram" style="font-size:24px"></i></h3>
+				</a>
+				
+
+			</div>
+			<div class="card">
+				<a class="fb" href="https://www.facebook.com/politeia.informazioni/?__tn__=kC-R&eid=ARD3CzzA_mjWPk9n7TJlP18cgZ7YZR1AkWX-YjYgWgpu3eEVCxKaR_I_vI_hz6dkQ-v8MCzSPeW5Q8Rj&hc_ref=ARTKL5lazHCzK32BDvJTLpROoM4OWArLLx9zZ3EtOZD2qvM_CvioIMY5w_5V2ZmHQsc&fref=nf&__xts__[0]=68.ARC1yuF6Zmm4lpgRZLqAYYl-Q-sumyO6GZiu9xyR0Lk2-O-8BjnZPqYXZRMfndMIurtLcd-7VG3KK8wo4JMy5djIJV1Zgz2ZXEE177Lr30l3rguZv2SN-KJPdNZWTFvwWJkoyd_b-wlBqw0DqmAeHQ63q0QDbx_K9HuHVUxkXd9l5LE-UeLhAqZQ6TyyYEsa6Pqa9DEQo-5RhXsc2e3H7cTJo9gHUnK1aSW2QOVlA">
+				<img class="card_image" src="file:///home/sveva/Scaricati/facebook.png">
+				<h4> Facebook <i class="fa fa-facebook-official" style="font-size:24px" position="absolute" ></i></h4>
+				</a>
+			</div>
+	</section>
+
+	<footer class="footer">
+		<p>Copyright - 2018 - politeiainformazioni.it</p>
+	</footer>
+
+
+
+	<script>
+		function myFunction(x) {
+ 		   x.classList.toggle("change");
+		}
+	</script>
+
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		 	var i;
+		  	var slides = document.getElementsByClassName("mySlides");
+		  	var dots = document.getElementsByClassName("dot");
+		  	if (n > slides.length) {slideIndex = 1}
+		  	if (n < 1) {slideIndex = slides.length}
+		  	for (i = 0; i < slides.length; i++) {
+		      	slides[i].style.display = "none";
+		  	}
+		  	for (i = 0; i < dots.length; i++) {
+		      	dots[i].className = dots[i].className.replace(" active", "");
+		  	}
+		  	slides[slideIndex-1].style.display = "block";
+		 	dots[slideIndex-1].className += " active";
+		} 
+	</script>
+			
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".header_icon-bar").click(function(e)){
+				$(".header_menu").toggleClass("is-open");
+				e.preventDefault();
+			}
+		}
+	</script>
+</body>
+</html>

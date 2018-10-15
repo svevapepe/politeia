@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Politeia</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet"  href="style.css">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+	<header class="header clearfix">
+		<a href="" class="header_logo">Associazione Politeia</a>
+		<img  class="header_gif" src="file:///home/sveva/Scaricati/imageedit_1_9649815909.png">
+		<a href="" class="header_icon-bar">
+			<span></span>
+			<span></span>	
+			<span></span>
+		</a>
+		<ul class="header_menu">
+			<li class="header_menu_item"><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+			<li class="header_menu_item"><a href="single.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+ProssimiEventi</a></li>
+			<li class="header_menu_item"><a href="single2.html"><i class="fa fa-calendar-check-o"></i> EventiPassati</a></li>
+			<li class="header_menu_item"><a href="">Item</a></li>
+			<li class="header_menu_item"><a href="single3.html"><i class="fa fa-address-book-o"></i> Contatti</a></li>
+		</ul>
+	</header>
+
+	<section>
+		<div class="container">
+  			<div style="text-align:center">
+			    <h2>Contact Us</h2>
+			    <p class="info" align="center">
+				    	<a  class="info_email"href="mailto:politeiainformazioni@gmail.com?Subject=Informazioni%20Evento">politeiainformazioni@gmail.com</a></p></p>
+			</div>
+			<div class="row">
+		    	<div class="column1">
+		    		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.876014843944!2d12.51489395137293!3d41.91702397911706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f616f72df4649%3A0xeb34bad2c37a9c94!2sVia+Antonio+Nibby%2C+9%2C+00161+Roma+RM!5e0!3m2!1sen!2sit!4v1539538730159" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+		      	</div>
+			  	<div class="column2">  
+			   		<form action="/action_page.php">
+				       	<label for="fname">Nome</label>
+					    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+				        <label for="lname">Cognome</label>
+				        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+			        	<label for="subject">Commento</label>
+			        	<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+			        	<input type="submit" value="Submit">
+		      		</form>
+		    	</div>
+		  	</div>
+		</div>
+		
+	</section>
+
+	<footer class="footer">
+		<p>Copyright - 2018 - politeiainformazioni.it</p>
+	</footer>
+
+	
+
+	<script>
+		$(document).ready(function(){
+			$(".header_icon-bar").click(function(e)){
+				$(".header_menu").toggleClass("is-open");
+				e.preventDefault();
+			}
+		}
+	</script>
+</body>
+</html>
