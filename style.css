@@ -104,6 +104,28 @@ Cover
 	text-align: center;
 	color:#fff;
 }
+.cover_caption_copy h1{
+	font-family: Arial,Helvetica,sans-seri;
+	font-size: 60px;
+	text-align: center;
+	font-weight: 500;
+}
+.cover_caption_copy h2{
+	font-size: 25px;
+	font-family: Arial,Helvetica,sans-serif;
+	text-align: center;
+	font-weight: 500;
+	font-style: oblique;
+}
+.cover_caption_copy h3{
+	font-size: 25px;
+	font-family: Arial,Helvetica,sans-serif;
+	text-align: right;
+	padding-right: 300px;
+	font-weight: 500;
+	font-style: oblique;
+}
+
 
 .cover2{
 	height: 130%;
@@ -243,13 +265,28 @@ Banner
 	background: transparent;
 	
 }
+
 .testo{
 	width: 50%;
 	display: table-cell;
 	vertical-align: middle;
+	text-align: center;
+	padding: 40px;
+	font-style: sans-serif;
+	margin-bottom: 0;
+	
+
+
+}
+.testo_body{
+	width: 50%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
 	padding: 30px;
 	font-style: sans-serif;
 	margin-bottom: 0;
+	
 
 }
 .testo2{
@@ -258,6 +295,7 @@ Banner
 	vertical-align: middle;
 	padding: 30px;
 	font-style: sans-serif;
+	text-align: center;
 	margin-bottom: 0;
 
 }
@@ -267,6 +305,7 @@ Banner
 	vertical-align: middle;
 	padding: 30px;
 	font-style: sans-serif;
+	text-align: center;
 	margin-bottom: 0;
 
 }
@@ -315,6 +354,7 @@ Single2.html
   	background: #fff;
   	height: 50%;
   	margin-top: 4%;
+
 
 }
 .slideshow2-container {
@@ -541,12 +581,12 @@ body, html {height: 100%}
     /*transform: translate(-50%,-50%);*/
     background: white;
 	position: absolute;
-	width: 750px;
-	height:300px;
+	width: 1000px;
+	height:500px;
 	top:50%;
 	left: 50%;
 	margin-top: -200px;
-	margin-left: -400px;
+	margin-left: -500px;
 	vertical-align: baseline;
 	text-align: center;
 	color: #000000;
@@ -576,14 +616,53 @@ body, html {height: 100%}
 .w3-text-white, .w3-hover-text-white:hover {
     color: #000 !important;
 }
-
-.info_email{
+.we-large{
+	font-size: 40px;
+}
+.contact{
 	text-decoration: none;
-	font-size: 18px !important;
+	font-size: 20px !important;
     text-align: center;
   	margin-top: 0px;
   	font-family: "Raleway", sans-serif;
   	color: black;
+  	font-style: bold;
+
+}
+.info_email{
+	text-decoration: none;
+	font-size: 20px !important;
+    text-align: center;
+  	margin-top: 0px;
+  	font-family: "Raleway", sans-serif;
+  	color: black;
+  	font-style: oblique;
+  }
+  .dove{
+  	text-decoration: none;
+	font-size: 25px !important;
+    text-align: center;
+  	margin-top: 0px;
+  	font-family:sans-serif;
+  	color: #5c0120;
+  }
+  .aula{
+  	text-decoration: none;
+	font-size: 30px !important;
+    text-align: center;
+  	margin-top: 0px;
+  	font-family: "Raleway", sans-serif;
+  	color: #5c0120;
+  }
+  .quando{
+  	text-decoration: none;
+	font-size: 25px !important;
+    text-align: center;
+  	margin-top: 0px;
+  	font-family: "Raleway", sans-serif;
+  	color: blue;
+  	font-style: bolder;
+
   }
 /*-------------------------------------
 Simple3.html
